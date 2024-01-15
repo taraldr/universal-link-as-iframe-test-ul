@@ -18,7 +18,7 @@
 
   <br/>
 
-  <div style="border: 1px solid black;width:400px;height:200px;" id="target-div"></div>
+  <div style="border: 1px solid black;width:400px;height:600px;" id="target-div"></div>
 
 	<script>
     const universalLinkUrl = `https://taraldr.github.io/universal-link-as-iframe-test/universal-link.html`;
@@ -31,6 +31,8 @@
         iframe.className = "iframe";
         iframe.id = "iframe";
         iframe.src = universalLinkUrl;
+	iframe.style.height = "100%";
+	iframe.style.width = "100%";
   
         targetDiv.appendChild(iframe);
         console.log("click");
