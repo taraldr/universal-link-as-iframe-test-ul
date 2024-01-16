@@ -1,0 +1,20 @@
+{
+   "applinks": {
+      "details": [
+         {
+            "appIDs": [ 
+               "[APP_ID]"
+            ],
+            "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true
+               },
+               {
+                  "/": "universal-link-as-iframe-test/universal-link.html"
+               }
+            ]
+         }
+      ]
+   }
+}

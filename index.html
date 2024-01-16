@@ -4,58 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Appswitch in Iframe test</title>
+    <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-  <h1>Iframe appswitch tester</h1>
-
-  <p>Ready to open iframe.</p>
-	  
-  <button id="button-direct">
-    Open iframe to universal link
-  </button>
-
-  <button id="button-indirect">
-    Open iframe to collect interaction to open universal link
-  </button>
-	  
-  <br/>
-
-  <div style="border: 1px solid black;width:400px;height:600px;" id="target-div"></div>
-  <script>
-	  
-    
-    const targetDiv = document.getElementById("target-div");
-
-    document
-      .getElementById("button-direct")
-      .addEventListener("click", () => {
-        const iframe = document.createElement("iframe");
-        iframe.className = "iframe";
-        iframe.id = "iframe";
-        iframe.src = "https://taraldr.github.io/universal-link-as-iframe-test/universal-link.html";
-	    iframe.style.height = "100%";
-	    iframe.style.width = "100%";
-  
-        targetDiv.appendChild(iframe);
-        console.log("click");
-      });
-	  
-    document
-	.getElementById("button-indirect")
-	.addEventListener("click", () => {
-		const iframe = document.createElement("iframe");
-        iframe.className = "iframe";
-        iframe.id = "iframe";
-        iframe.src = "./extra-gesture.html";
-	    iframe.style.height = "100%";
-	    iframe.style.width = "100%";
-  
-        targetDiv.appendChild(iframe);
-        console.log("click");
-        });
-  </script>
+		<h1>Iframe appswitch tester (subdomain with apple-app-site-association)</h1>
   </body>
 </html>    
