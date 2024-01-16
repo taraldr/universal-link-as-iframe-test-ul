@@ -1,20 +1,20 @@
 {
-   "applinks": {
-      "details": [
-         {
-            "appIDs": [ 
-               "[APP_ID]"
-            ],
-            "components": [
-               {
-                  "#": "no_universal_links",
-                  "exclude": true
-               },
-               {
-                  "/": "universal-link-as-iframe-test/universal-link.html"
-               }
-            ]
-         }
-      ]
-   }
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "BWQZX9732Z.bidbax.aletheia-iframe-appswitch-ios-tester"
+        ],
+        "components": [
+          {
+            "#": "no_universal_links",
+            "exclude": true
+          },
+          {
+            "/": "universal-link-as-iframe-test/universal-link.html"
+          }
+        ]
+      }
+    ]
+  }
 }
