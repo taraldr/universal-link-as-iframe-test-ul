@@ -11,7 +11,7 @@
             "exclude": true
           },
           {
-            "/": "universal-link-as-iframe-test/universal-link.html"
+            "/": "universal-link.html"
           }
         ]
       }
