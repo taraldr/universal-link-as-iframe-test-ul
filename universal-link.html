@@ -11,10 +11,22 @@
     <h1>If you're seeing this page that means appswitch failed.</h1>
     <p>Closing window in 3 seconds.</p>
 
+    <button id="cancel-close-button">Abort closing</button>
+
+    <a href="https://iframe-tester.dev1.aletheia-test.idtech.no/close-page.html"
+      >Redirect to main site which closes the page</a
+    >
+
     <script>
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         window.close();
       }, 3000);
+
+      document
+        .getElementById("cancel-close-button")
+        .addEventListener("click", () => {
+          clearTimeout(timeout);
+        });
     </script>
   </body>
 </html>
